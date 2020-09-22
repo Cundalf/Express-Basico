@@ -5,12 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Programa de Colas</title>
+    <link href="css/style.css" rel="stylesheet">
+    
+    <title>Test Socket</title>
 </head>
 
 <body>
-    <h1>Programa de Colas</h1>
-
+    <div class="container">
+        <div class="center">
+            <h2>TEST SOCKET</h2>
+            
+            <label>Usuario</label> <br />
+            <input type="text" id="txtUsuario"><br />
+            <br />
+            <label>Mensaje</label><br />
+            <input type="text" id="txtMensaje"><br />
+            <br />
+            <button id="btnEnviar">Enviar</button>
+        </div>
+        
+        <ul id="chat">
+        </ul>
+    </div>
+    
+    <!--Sripts -->
+    <script src="socket.io/socket.io.js"></script>
+    <script src="js/socket-custom.js"></script>
 </body>
 
 </html>
